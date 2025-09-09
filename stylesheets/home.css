@@ -1,0 +1,49 @@
+
+.video-container {
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCBE0;
+  }
+  
+  /* Wrapper to preserve aspect ratio */
+  .iframe-wrapper {
+    width: 80%;           /* adjust size as needed */
+    max-width: 1200px;
+    aspect-ratio: 16 / 9; /* adjust based on your Spline scene */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Spline iframe */
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .wrapper {
+    display: inline-flex;
+    flex-direction: column;
+  }

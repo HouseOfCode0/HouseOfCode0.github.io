@@ -1,0 +1,35 @@
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    white-space: nowrap;
+    background-color: black;
+    margin-bottom: 20px;
+  
+  
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .left {
+    font-size: 2rem;
+  
+  }
+  
+  .navbar a {
+    margin: 0 23px;
+    cursor: pointer;
+  
+  }
+
+
+  

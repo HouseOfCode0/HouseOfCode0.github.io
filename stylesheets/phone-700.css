@@ -1,0 +1,109 @@
+/* phone */
+@media only screen and (max-width: 700px) {
+   
+    .video-container {
+      height: var(--sectionHeight)
+    }
+  
+    .about {
+      height: 60rem
+    }
+  
+    .projects {
+      height: 60rem
+    }
+  
+    .exp {
+      height: 80rem
+    }
+  
+    .circular-image-container {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .slider .img .slide-content {
+      height: 90vh;
+  
+    }
+  
+    .slider .img .slide-content p {
+      font-size: 18px;
+      width: 100%;
+  
+    }
+  
+    .slider .img .slide-content h2 {
+      font-size: 30px;
+    }
+  
+    /*navbar icons */
+    .icons {
+      display: inline-flex;
+    }
+  
+    #closed-icon {
+      display: none;
+    }
+  
+    #check {
+      display: none;
+    }
+  
+    #check:checked~.icons #menu-icon {
+      display: none;
+    }
+  
+    #check:checked~.icons #closed-icon {
+      display: block;
+    }
+  
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.3rem 10%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 100
+    }
+  
+  
+    .navbar {
+      position: absolute;
+      height: 0;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+      transition: .3s ease;
+      overflow: hidden;
+      backdrop-filter: blur(50px);
+  
+  
+    }
+  
+    .navbar a {
+      display: block;
+      text-align: center;
+      margin: 1.5rem 0;
+      font-size: 1.3rem;
+    }
+  
+    #check:checked~.navbar {
+      height: 17.7rem;
+    }
+  
+    #tsparticles {
+      height: 85%;
+    }
+  
+    .gene-p {
+  
+      height: 30rem;
+      margin: 10px;
+    }
+  
+  }

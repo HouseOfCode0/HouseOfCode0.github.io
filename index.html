@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Of Code</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/about.css">
+  <link rel="stylesheet" href="stylesheets/navbar.css">
+  <link rel="stylesheet" href="stylesheets/home.css">
+  <link rel="stylesheet" href="stylesheets/dynamicText.css">
+  <link rel="stylesheet" href="stylesheets/ipad.css">
+  <link rel="stylesheet" href="stylesheets/phone-700.css">
+  <link rel="stylesheet" href="stylesheets/phone-290.css">
+  <link rel="stylesheet" href="stylesheets/portfolio.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="script.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="left">
+      <a href="#" class="logo">HoC.</a>
+    </div>
+    <input type="checkbox" id="check">
+    <label class="icons" for="check">
+
+      <i class='bx bx-menu' style='color:#ffffff' id='menu-icon'></i>
+      <i class='bx bx-x' style='color:#ffffff' id="closed-icon"></i>
+    </label>
+
+
+    <nav class="navbar">
+      <a onclick="scrollToSection('home')">Home</a>
+      <a onclick="scrollToSection('about')">About</a>
+      <a onclick="scrollToSection('portfolio2')">Portfolio</a>
+
+    </nav>
+  </header>
+
+  <div class="video-container" id="home">
+    <!-- Spline iframe -->
+   
+    </iframe>
+    <iframe src='https://my.spline.design/miniroommusiccopy-le2wUcgq9CJLjXPzdzkuFbm7/' frameborder='0' width='100%' height='100%'>
+
+    </iframe>
+  
+    <!-- Overlay text -->
+    <div class="overlay">
+      <div class="wrapper">
+        <ul class="dynamic-text">
+          <li><span class="typing-animation">House of Code..</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <section class="about" id="about">
+    <!-- Heading -->
+    <div class="about-header">
+      <p class="p-about">Hello! I'm a Full Stack Developer based in London. </p>
+    </div>
+  
+    <!-- Content (text + image) -->
+    <div class="about-content">
+      <div class="about-text">
+        <p class="p-">
+          I love building tools that make a real difference and deliver high value.<br><br>
+I studied Computer Science at a university in England, graduating with First Class Honours. 
+During this time, I engineered NLP systems at Fortune 500 companies — one that automated gene selection for multi-million-dollar clinical trials, 
+and another that streamlined document allocation.
+
+<br><br>After graduating, I began working as a consultant, helping companies launch and scale their applications. 
+One highlight was building and scaling a full-stack Flutter app from scratch — now live with paying users.
+<br><br>My stack is diverse, but my main focus is on Flutter (or native) for mobile, React for web, and 
+GCP-hosted TypeScript/Python for backend systems.
+
+<br><br> I'm currently looking for a new role as a developer . Hire me?
+           
+
+
+        </p>
+      </div>
+  
+      <div class="circular-image-container">
+        <img class="circular-image" src="media/avatar.png" alt="Circular Image">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="portfolio2 w-screen p-4 bg-white pt-12 pb-36" id="portfolio2">
+    <!-- Section header -->
+    <div class="flex justify-center mb-8">
+      <p class="portfolio-header">
+        Portfolio
+      </p>
+    </div>
+  
+    <!-- Grid only for cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-16">
+    <!-- Cards injected here by JS -->
+  </div>
+  </section>
+  
+  <!-- Card template -->
+  <template id="card-template">
+    <div class="card-container">
+      <div class="card-content-wrapper">
+        <div class="card-front-content">
+          
+          <img src="" alt="" class="w-full h-full object-cover rounded-xl" />
+          <video class="w-full h-full object-cover rounded-xl" autoplay loop muted playsinline></video>
+        </div>
+        <div class="card-back-content flex flex-col p-8 justify-between">
+          <div class="text-left w-full">
+            <h3 class="text-4xl font-bold mb-2"></h3>
+            <p class="text-lg font-normal text-gray-400"></p>
+          </div>
+          <div class="flex justify-between items-end w-full">
+            <div class="card-image-wrapper">
+              <img src="" alt="" class="w-full h-full object-cover rounded-xl" />
+            </div>
+            <a href="#" class="more-link text-xl font-bold text-gray-300 flex items-center ml-auto">
+              Github<span class="ml-2">&#8599;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  
+  
+<!--
+  <section class="projects" id="portfolio">
+    <p class="p-projects">Projects</p>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div id="tsparticles" class="img">
+          <div class="slide-content">
+            <h2 class="gene-h">Gene Networks</h2>
+            <p class="gene-p">
+            </p>
+          </div>
+        </div>
+        <div id="slide-2" class="img">
+          <div class="slide-content">
+            <h2>Tensorflow</h2>
+            <p style="width: auto;"></p>
+            <form style="margin: 10px;">
+              <button class="btn" formtarget="_blank" type="submit"
+                formaction="https://github.com/HouseOfCode0/TensorFlow_projects"><i class='bx bxl-github'
+                  style='font-size: 40px;'></i></i></button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="slider-nav">
+        <a href="#tsparticles"></a>
+        <a href="#slide-2"></a>
+      </div>
+    </div>
+
+    
+  </section>
+  -->
+
+
+
+
+
+<script type="module">
+  const cardData = [
+    { 
+      title: "Evolutionary Algorithms", 
+      desc: "Memetic algorithms applied to solving the Knapsack optimization problem", 
+      img: "media/genetic.gif", 
+      link: "https://example.com/build",
+      alt: "Abstract geometric lines design",
+      private_repo: true // Added field: set to true if private
+    },
+    { 
+      title: "Othello", 
+      desc: "Java-based Othello game with AI-powered bots", 
+      img: "media/othello.gif", 
+      link: "https://github.com/HouseOfCode0/Othello",
+      alt: "Modern architecture building",
+      private_repo: false // Added field: set to true if private
+    },
+    { 
+      title: "Conversational GPS AR agents", 
+      desc: "Generative AI to transform images into avatars roaming the campus using GPS as interactive conversational agents", 
+      img: "media/alan.gif", 
+      link: "https://example.com/more",
+      alt: "City skyscrapers skyline",
+      back_img: "media/alan-placeholder.png",  // Add this for video cards (create a static poster image if needed)
+      private_repo: false // Added field: set to true if private
+    },
+      
+  ];
+  
+  const grid = document.querySelector(".grid");
+  const template = document.getElementById("card-template");
+  
+  cardData.forEach(data => {
+    const clone = template.content.cloneNode(true);
+  
+    // Front media
+    const video = clone.querySelector(".card-front-content video");
+    const frontImg = clone.querySelector(".card-front-content img");
+  
+    if (data.video) {
+      video.src = data.video;
+      video.classList.remove("hidden");
+      frontImg.classList.add("hidden");
+    } else if (data.img) {
+      frontImg.src = data.img;
+      frontImg.alt = data.alt || data.title;
+      frontImg.classList.remove("hidden");
+      video.classList.add("hidden");
+    }
+  
+    // Back image (use data.back_img if present, else fallback to data.img or a placeholder)
+    const backImg = clone.querySelector(".card-image-wrapper img");
+    backImg.src = data.back_img || data.img || 'media/placeholder.jpg';  // Adjust placeholder as needed
+    backImg.alt = data.alt || data.title;
+  
+    clone.querySelector("h3").textContent = data.title;
+    clone.querySelector("p").textContent = data.desc;
+  
+    const link = clone.querySelector(".more-link");
+    link.href = data.link;
+    link.target = "_blank";
+
+    // Added logic for private repo text
+    if (data.private_repo) {
+      link.textContent = "Private Repo :(";
+      link.removeAttribute("href"); // Optionally remove href if private to make it non-clickable
+      link.removeAttribute("target");
+    } else {
+      link.textContent = "Github"; // Assuming default text is "Github"; adjust if the template has different text
+    }
+
+    
+  
+    grid.appendChild(clone);
+  });
+</script>
+    
+  
+<script>
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: "#ffffff" },
+      shape: {
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 5 },
+        image: { src: "img/github.svg", width: 100, height: 100 }
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 400, line_linked: { opacity: 1 } },
+        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+        repulse: { distance: 200, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: { particles_nb: 2 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

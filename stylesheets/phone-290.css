@@ -1,0 +1,41 @@
+@media only screen and (max-width: 290px) {
+    #tsparticles {
+      height: 95%;
+  
+    }
+  
+    .slide-content {
+      margin-bottom: 50px;
+  
+    }
+  
+    .slider .img .slide-content {
+      top: 150px
+    }
+  
+    .projects {
+      height: 70rem
+    }
+  
+    .about {
+      height: 70rem
+    }
+  
+    .dynamic-text li {
+      font-size: 40px;
+    }
+  
+    .video-container {
+      height: 70vh
+    }
+  
+    .p- {
+  
+      max-width: 80%;
+  
+    }
+  }
+  
+  
+  
+  

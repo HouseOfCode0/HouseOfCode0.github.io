@@ -1,0 +1,69 @@
+.dynamic-text li {
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .dynamic-text li span {
+    position: relative;
+  }
+  
+  .typing-animation {
+    font-family: 'IBM Plex Mono', monospace;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    animation: typing 3s steps(13) infinite;
+  }
+  
+  .typing-animation::after {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    height: 100%;
+    color: white;
+  }
+  
+  .typing-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid white;
+    animation: cursor 0.7s steps(1) infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .dynamic-text li {
+      font-size: 2.8rem;
+    
+    }
+  }
+
+
+ 

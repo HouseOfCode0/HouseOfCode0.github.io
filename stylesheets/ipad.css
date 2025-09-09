@@ -1,0 +1,41 @@
+/*ipad*/
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    #tsparticles {
+      height: 95%;
+      width: 100%;
+  
+  
+    }
+  
+    .projects {
+      height: 57rem
+    }
+  
+    .gene-p {
+      width: 80%;
+      height: 100%;
+      top: 0;
+  
+    }
+  
+    
+  }
+
+
+  /* CSS specific to iOS devices */
+@supports (-webkit-touch-callout: none) {
+
+
+    .navbar {
+      position: absolute;
+      height: 0;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: black;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+      transition: .3s ease;
+      overflow: hidden;
+      opacity: 0.8;
+    }
+  }
